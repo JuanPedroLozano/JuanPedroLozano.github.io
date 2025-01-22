@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 1.2em;
+}
+
+/* Estilos de las secciones */
+.section-title {
+    font-size: 1.6em;
+    color: #2980b9;
+    border-bottom: 3px solid #2980b9;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+/* Estilo para las listas de experiencia, educación, habilidades */
+.experience, .education, .skills, .contact {
+    margin-bottom: 25px;
+}
+
+.experience ul, .education ul, .skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience li, .education li, .skills li {
+    margin-bottom: 20px;
+}
+
+.experience li h3, .education li h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #2980b9;
+}
+
+.experience li p, .education li p {
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+.skills ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.skills li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skills li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #2980b9;
+}
+
+.contact a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Agregar un efecto hover a los enlaces de contacto */
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptabilidad para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .skills ul {
+        columns: 1;
+    }
+
+    .experience li, .education li, .skills li {
+        margin-bottom: 15px;
+    }
+}
